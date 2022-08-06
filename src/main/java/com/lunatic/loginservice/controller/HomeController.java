@@ -19,6 +19,11 @@ public class HomeController {
     @Autowired
     UserService userService;
 
+    @GetMapping("/test")
+    public String test(){
+        return "<h1>Test Page</>";
+    }
+
     @GetMapping("/home")
     public String home(){
         return "<h1>Home Page</>";
